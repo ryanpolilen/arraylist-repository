@@ -19,7 +19,10 @@ public class ArraylistGitHub{
 
 		System.out.print(list2);
 		System.out.println();
+
 		System.out.println(combineList(list1, list2));
+
+		separateList(list1);
 	}
 
 	public static ArrayList<Integer> combineList(ArrayList<Integer> list1, ArrayList<Integer> list2){
@@ -30,5 +33,11 @@ public class ArraylistGitHub{
 			}
 
 	return list1;
+	}
+	public static void separateList(ArrayList<Integer> list1){
+		for (int i = 0; i < list1.size();i++){
+			System.out.print(list1.get(i)+",");
+
+		}
 	}
 }
